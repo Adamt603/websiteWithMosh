@@ -1,5 +1,6 @@
 /*start of default code */
 
+/* Default font size */
 html {
     /*This is the default font size set by the browser.*/
     /*font-size: 16px;*/
@@ -17,7 +18,7 @@ html {
 body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     margin: 0;
 }
-
+/* Removes the line under all lines in page */
 a {
     text-decoration: none;
 }
@@ -31,6 +32,7 @@ img, picture {
 :root {
     --accentColor: #ff3400;
     --bodyTextColor: #918ca4;
+    --cardTextColor: #ffffff;
     --headerTextColor: #1b0760;
     --primaryColor: #2584ff;
     --secondaryColor: #00d9ff;
@@ -40,14 +42,12 @@ img, picture {
 body {
     background-color: rgb(253, 247, 228);
     color: var(--bodyTextColor);
-    /*font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
-    font-family: 'Inter';
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /*Default font size this is 24px.*/
     font-size: 2.4rem;
     line-height: 1.5;
     min-height: 96vh;
-    /*background-color: #000000;*/
     text-rendering: optimizeSpeed;
 }
 
@@ -92,33 +92,15 @@ h3 {
 
 /*end of default code */
 
-/* Rules for horizontal lists */
-.horizontalList {
-    list-style-type: none;
-}
 
-.horizontalListElement {
-    display: inline-block;
-}
-
-/*Rules for the nav */
-nav {
-    overflow: hidden;
-    width: 16rem;
-}
-
-.navLinks {
-    /*color: #ffffff;*/
-    font-size: 16px;
-}
 
 /*<editor-fold desc="small link">*/
 /*Links*/
 .linkArrow {
     color: var(--accentColor);
-    text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .linkArrow::after {
@@ -138,4 +120,43 @@ nav {
 }
 
 /*</editor-fold>*/
+
+/*<editor-fold desc="Badges">*/
+/*Badges*/
+.badge {
+    border-radius: 20px;
+    color: var(--cardTextColor);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2.5rem;
+    /*forces us to not have multiple lines this is needed when we have a small amount of space.*/
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background: var(--primaryColor);
+}
+
+.badge--secondary {
+    background-color: var(--secondaryColor);
+}
+
+.badge--small {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1204px) {
+    .badge--small {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    .badge{
+        font-size: 1.5rem;
+    }
+}
+/*</editor-fold>*/
+
+
 
