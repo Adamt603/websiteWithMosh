@@ -1,3 +1,64 @@
-body {
-    background-color: gold;
+/*start of default code */
+
+/* Box sizing rules */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
+
+/* Remove default margin */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0;
+}
+
+/* Make images easier to work with */
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --primaryColor: #2584ff;
+    --secondaryColor: #00d9ff;
+    --accentColor: #ff3400;
+    --headerTextColor: #1b0760;
+    --bodyTextColor: #918ca4;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 96vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: rgb(253, 247, 228);
+    /*background-color: #000000;*/
+}
+
+/*end of default code */
+
+/* Rules for horizontal lists */
+.horizontalList {
+    list-style-type: none;
+}
+
+.horizontalListElement {
+    display: inline-block;
+}
+
+.linkTextDecoration {
+    text-decoration: none;
+    color: black;
+}
+
+/*Rules for the nav */
+nav {
+    width: 16rem;
+    overflow: hidden;
+}
+
+.navLinks {
+    /*color: #ffffff;*/
+    font-size: 16px;
+}
+
