@@ -56,6 +56,8 @@ body {
     text-rendering: optimizeSpeed;
 }
 
+/*end of default code */
+
 /*<editor-fold desc="Typography">*/
 /*Typography*/
 h1, h2, h3 {
@@ -94,8 +96,6 @@ h3 {
 /*End of Typography*/
 /*</editor-fold>*/
 
-
-/*end of default code */
 
 
 
@@ -193,6 +193,7 @@ h3 {
 }
 /*</editor-fold>*/
 
+/*<editor-fold desc="Icon">*/
 /*Icons*/
 .icon {
     width: 40px;
@@ -212,6 +213,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+/*</editor-fold>*/
 
 
 
