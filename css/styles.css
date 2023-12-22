@@ -40,6 +40,7 @@ img, picture {
     --headerTextColor: #1b0760;
     --primaryColor: #2584ff;
     --secondaryColor: #00d9ff;
+    --iconBackgroundColor: #f3f9fa;
 }
 
 /* Set core body defaults */
@@ -191,5 +192,28 @@ h3 {
     }
 }
 /*</editor-fold>*/
+
+/*Icons*/
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--primaryColor);
+}
+
+.icon-Container {
+    background-color: var(--iconBackgroundColor);
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
