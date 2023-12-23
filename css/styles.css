@@ -38,9 +38,9 @@ img, picture {
     --bodyTextColor: #918ca4;
     --cardTextColor: #ffffff;
     --headerTextColor: #1b0760;
+    --iconBackgroundColor: #f3f9fa;
     --primaryColor: #2584ff;
     --secondaryColor: #00d9ff;
-    --iconBackgroundColor: #f3f9fa;
 }
 
 /* Set core body defaults */
@@ -77,7 +77,7 @@ h3 {
     font-size: 3rem;
 }
 
-@media screen and (min-width: 1204px){
+@media screen and (min-width: 1024px){
     body {
         font-size: 1.8rem;
     }
@@ -118,7 +118,7 @@ h3 {
     margin-left: 10px;
 }
 
-@media screen and (min-width: 1204px) {
+@media screen and (min-width: 1024px) {
     .linkArrow {
         font-size: 1.5rem;
     }
@@ -151,7 +151,7 @@ h3 {
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 1204px) {
+@media screen and (min-width: 1024px) {
     .badge--small {
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -167,8 +167,8 @@ h3 {
 /*<editor-fold desc="Lists">*/
 /* Lists */
 .list {
-    padding-left: 0;
     color: var(--headerTextColor);
+    padding-left: 0;
 }
 
 .list--inline .list__item{
@@ -182,11 +182,11 @@ h3 {
 }
 /*This applies a padding to the list "items" only if they are a child of a checked list */
 .list--check .list__item {
-    padding-left: 0.5rem;
     margin-bottom: 1rem;
+    padding-left: 0.5rem;
 }
 
-@media screen and (min-width: 1204px) {
+@media screen and (min-width: 1024px) {
     .list--check .list__item {
         padding-left: 0;
     }
@@ -196,8 +196,8 @@ h3 {
 /*<editor-fold desc="Icon">*/
 /*Icons*/
 .icon {
-    width: 40px;
     height: 40px;
+    width: 40px;
 }
 
 .icon--primary {
@@ -205,15 +205,82 @@ h3 {
 }
 
 .icon-Container {
+    align-items: center;
     background-color: var(--iconBackgroundColor);
-    width: 64px;
-    height: 64px;
     border-radius: 100%;
     display: inline-flex;
+    height: 64px;
     justify-content: center;
-    align-items: center;
+    width: 64px;
 }
 /*</editor-fold>*/
+
+/*<editor-fold desc="Buttons">*/
+/*Buttons*/
+.button {
+    border: none;
+    border-radius: 40px;
+    color: var(--cardTextColor);
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.button--dark--blue {
+    background: var(--headerTextColor);
+
+}
+
+.button--dark-unselected{
+    background: none;
+    border: var(--headerTextColor) 2px solid;
+    color: var(--headerTextColor);
+}
+
+.button--dark-unselected:hover {
+    background: var(--headerTextColor);
+    color: var(--cardTextColor);
+}
+
+
+.button--orange {
+    background: var(--accentColor);
+}
+
+.button--orange:hover {
+    background: #fd4516;
+}
+
+
+.button--light--blue {
+    background: var(--secondaryColor);
+}
+
+.button--short:hover {
+    background: #00c8eb;
+}
+
+.button--block {
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px){
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/*</editor-fold>*/
+
+
 
 
 
