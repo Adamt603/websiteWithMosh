@@ -36,6 +36,7 @@ img, picture {
 :root {
     --accentColor: #ff3400;
     --boardColor: #ccc;
+    --bodyDarkerColor: #5c5577;
     --bodyTextColor: #918ca4;
     --borderRadious: 30px;
     --cardTextColor: #ffffff;
@@ -43,7 +44,6 @@ img, picture {
     --iconBackgroundColor: #f3f9fa;
     --primaryColor: #2584ff;
     --secondaryColor: #00d9ff;
-    --bodyDarkerColor: #5c5577;
 }
 
 /* Set core body defaults */
@@ -475,13 +475,13 @@ h3 {
 
 .quote__footer {
     color: var(--headerTextColor);
-    margin-top: 2rem;
     font-style: normal;
+    margin-top: 2rem;
 }
 
 .quote__line {
-    position: relative;
     bottom: 10px;
+    position: relative;
 }
 
 @media  screen and (min-width: 1024px) {
@@ -498,6 +498,29 @@ h3 {
     }
 }
 /*</editor-fold>*/
+
+/*<editor-fold desc="Grid">*/
+/* Grid */
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/*</editor-fold>*/
+
+
+
+
 
 
 
