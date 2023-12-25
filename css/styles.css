@@ -205,19 +205,34 @@ h3 {
     width: 40px;
 }
 
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 .icon--primary {
     fill: var(--primaryColor);
 }
 
+.icon--white {
+    fill: var(--cardTextColor);
+}
+
 .icon-Container {
-    align-items: center;
     background-color: var(--iconBackgroundColor);
+    align-items: center;
     border-radius: 100%;
     display: inline-flex;
     height: 64px;
     justify-content: center;
     width: 64px;
 }
+
+.icon___container-orange {
+    background: var(--accentColor);
+}
+
+
 /*</editor-fold>*/
 
 /*<editor-fold desc="Buttons">*/
@@ -514,6 +529,42 @@ h3 {
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
         grid-template-columns: repeat(3,1fr);
+    }
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Testimonials">*/
+/* Testimonials */
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial__img {
+    position: relative;
+}
+
+.testimonial__icon {
+    position: absolute;
+    top: 3rem;
+    right: -30px;
+}
+
+.testimonial__img > img{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote, .testimonial .quote__name{
+        font-size: 2.4rem;
+    }
+
+    .testimonial__quote {
+        margin-left: 6rem;
+    }
+
+    .testimonial__icon {
+        right: -32px;
     }
 }
 /*</editor-fold>*/
