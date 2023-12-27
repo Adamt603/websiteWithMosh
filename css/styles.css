@@ -39,7 +39,7 @@ img, picture {
     --bodyDarkerColor: #5c5577;
     --bodyTextColor: #918ca4;
     --borderRadious: 30px;
-    --cardTextColor: #ffffff;
+    --whiteText: #ffffff;
     --headerTextColor: #1b0760;
     --iconBackgroundColor: #f3f9fa;
     --primaryColor: #2584ff;
@@ -134,7 +134,7 @@ h3 {
 /*Badges*/
 .badge {
     border-radius: 20px;
-    color: var(--cardTextColor);
+    color: var(--whiteText);
     font-size: 2rem;
     font-weight: 600;
     padding: 0.5rem 2.5rem;
@@ -215,7 +215,7 @@ h3 {
 }
 
 .icon--white {
-    fill: var(--cardTextColor);
+    fill: var(--whiteText);
 }
 
 .icon-Container {
@@ -240,7 +240,7 @@ h3 {
 .button {
     border: none;
     border-radius: 40px;
-    color: var(--cardTextColor);
+    color: var(--whiteText);
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
@@ -264,7 +264,7 @@ h3 {
 
 .button--dark-unselected:hover {
     background: var(--headerTextColor);
-    color: var(--cardTextColor);
+    color: var(--whiteText);
 }
 
 
@@ -363,12 +363,12 @@ h3 {
 
 .card--primary .card__header {
     background: var(--primaryColor);
-    color: var(--cardTextColor);
+    color: var(--whiteText);
 }
 
 .card--secondary .card__header {
     background: var(--secondaryColor);
-    color: var(--cardTextColor);
+    color: var(--whiteText);
 }
 
 .card--secondary .badge--secondary {
@@ -384,7 +384,7 @@ h3 {
 /*<editor-fold desc="Plan/full card">*/
 /* Plans */
 .plan__name {
-    color: var(--cardTextColor);
+    color: var(--whiteText);
     font-size: 2.4rem;
     font-weight: 500;
     margin: 0;
@@ -583,11 +583,11 @@ h3 {
 
 .callout--primary {
     background: var(--primaryColor);
-    color: var(--cardTextColor);
+    color: var(--whiteText);
 }
 
 .callout__heading {
-    color: var(--cardTextColor);
+    color: var(--whiteText);
     font-size: 3rem;
     margin-top: 0;
 }
@@ -692,7 +692,7 @@ h3 {
 }
 
 .block--dark .block__heading{
-    color: var(--cardTextColor);
+    color: var(--whiteText);
 }
 
 .block--skewed-right {
@@ -711,7 +711,71 @@ h3 {
 }
 /*</editor-fold>*/
 
+/*<editor-fold desc="nav">*/
+/* nav */
+.nav {
+    display: flex;
+    background: #000000;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: center;
+}
 
+.nav__list {
+    width: 100%;
+    margin: 0;
+}
+
+.nav__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+    color: #d2d0db;
+    transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+    color: var(--whiteText);
+}
+
+.nav__toggler {
+    opacity: 0.5;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+
+nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+
+}
+
+.nav__brand {
+    transform: translateY(5px);
+}
+
+@media  screen and (min-width: 768px){
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100vh;
+        opacity: 1;
+    }
+
+    .nav__item {
+        border: none;
+    }
+}
+/*</editor-fold>*/
 
 
 
