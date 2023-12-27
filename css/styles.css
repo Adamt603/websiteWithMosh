@@ -206,8 +206,8 @@ h3 {
 }
 
 .icon--small {
-    width: 30px;
     height: 30px;
+    width: 30px;
 }
 
 .icon--primary {
@@ -219,8 +219,8 @@ h3 {
 }
 
 .icon-Container {
-    background-color: var(--iconBackgroundColor);
     align-items: center;
+    background-color: var(--iconBackgroundColor);
     border-radius: 100%;
     display: inline-flex;
     height: 64px;
@@ -288,6 +288,11 @@ h3 {
 .button--block {
     display: inline-block;
     width: 100%;
+}
+
+.button--long {
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 @media screen and (min-width: 1024px){
@@ -545,8 +550,8 @@ h3 {
 
 .testimonial__icon {
     position: absolute;
-    top: 3rem;
     right: -30px;
+    top: 3rem;
 }
 
 .testimonial__img > img{
@@ -569,7 +574,60 @@ h3 {
 }
 /*</editor-fold>*/
 
+/* Callouts */
+.callout {
+    border-radius: 5px;
+    padding: 4rem;
+}
 
+.callout--primary {
+    background: var(--primaryColor);
+    color: var(--cardTextColor);
+}
+
+.callout__heading {
+    color: var(--cardTextColor);
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.callout__content{
+    text-align: center;
+}
+
+
+.callout__button {
+    align-self: center;
+    justify-content: center;
+    margin: 2rem 2rem;
+}
+
+@media  screen and (min-width: 768px){
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+@media  screen and (min-width: 1024px){
+    .callout__button {
+        margin: 0 2rem;
+        justify-self: start;
+    }
+}
+
+@media screen and (min-width: 509px) and (max-width: 764px) {
+    /*.callout .grid--1x2 {
+        grid-template-rows: 1fr auto;
+    }*/
+    .callout__button {
+        width: 35rem;
+        justify-self: center;
+    }
+}
 
 
 
