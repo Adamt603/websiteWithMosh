@@ -391,6 +391,11 @@ h3 {
 
 /*<editor-fold desc="Plan/full card">*/
 /* Plans */
+
+.plan {
+    transition: transform 0.2s ease-out;
+}
+
 .plan__name {
     color: var(--whiteText);
     font-size: 2.4rem;
@@ -418,6 +423,19 @@ h3 {
 
 .plan .list__item {
     margin-bottom: 2rem;
+}
+
+.plan--popular {
+    transform: scale(1.1);
+
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
 }
 
 .plan--popular .card__header {
@@ -858,6 +876,25 @@ nav.collapsible--expanded .nav__toggler {
     }
 }
 /*</editor-fold>*/
+
+/*<editor-fold desc="Plans block">*/
+/* Plans block */
+.blockPlans {
+
+}
+
+.blockPlans .grid {
+    gap: 8rem 4rem;
+}
+
+.blockPlans .card {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+/*</editor-fold>*/
+
+
+
 
 
 
