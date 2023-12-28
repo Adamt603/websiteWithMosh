@@ -9,7 +9,7 @@
     <!--Fonts we want the user to download for all pages -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400; 600; 700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!--End of downloaded fonts-->
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,13 @@
                 <a href="" class="button button--orange hero__button">Get started</a>
             </header>
 
-            <img class="hero__image" src="images/banner.png" alt="">
+            <Picture>
+                <source type="image/webp" srcset="images/resized/banner@1x.webp 1x, images/resized/banner@2x.webp 2x">
+                <source type="image/png" srcset="images/resized/banner@1x.png 1x, images/resized/banner@2x.png 2x">
+
+                <img class="hero__image" src="images/banner.png" alt="">
+
+            </Picture>
 
         </div>
 
