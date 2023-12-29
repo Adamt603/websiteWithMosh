@@ -206,6 +206,11 @@ h3 {
     width: 40px;
 }
 
+.icon--large {
+    height: 50px;
+    width: 50px;
+}
+
 .icon--small {
     height: 30px;
     width: 30px;
@@ -227,6 +232,11 @@ h3 {
     height: 64px;
     justify-content: center;
     width: 64px;
+}
+
+.icon__Container-large {
+    height: 74px;
+    width: 74px;
 }
 
 .icon___container-orange {
@@ -891,6 +901,38 @@ nav.collapsible--expanded .nav__toggler {
     max-width: 50rem;
     margin: 0 auto;
 }
+/*</editor-fold>*/
+
+/*<editor-fold desc="Features block">*/
+/* Features block */
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+.feature__content {
+
+}
+
+.feature:first-of-type {
+    margin: 6rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content{
+        order:2;
+    }
+}
+
 /*</editor-fold>*/
 
 
