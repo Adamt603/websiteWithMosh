@@ -964,7 +964,97 @@ nav.collapsible--expanded .nav__toggler {
 }
 /*</editor-fold>*/
 
+/*<editor-fold desc="Testimonial Block">*/
 /* Testimonial block */
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Footer block">*/
+/* Footer block */
+
+.footer {
+    background: #232323;
+}
+
+.footer a {
+    color: #777;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--whiteText);
+}
+
+.footer .list {
+    margin: 0;
+}
+
+.footer .list li {
+    margin: 1.2rem 0;
+}
+
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 3px solid #393939;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__brand img {
+    width: 100%;
+    max-width: 230px;
+}
+
+.footer__copyright {
+    font-size: 2.1rem;
+    color: var(--whiteText);
+    opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__sections {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .footer__section {
+        border-bottom: 0;
+    }
+
+    .footer .collapsible__chevron {
+        display: none;
+    }
+
+    .footer .collapsible__content {
+        opacity: 1;
+        max-height: 100%;
+    }
+
+    .footer__brand {
+        margin-top: 1rem;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer__copyright {
+        font-size: 1.5rem;
+    }
+
+    .footer__heading {
+        font-size: 1.6rem;
+    }
+}
+
+
+/*</editor-fold>*/
 
 
 
