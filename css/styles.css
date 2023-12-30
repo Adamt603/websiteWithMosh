@@ -29,8 +29,8 @@ ul {
 
 /* Make images easier to work with */
 img, picture {
-    display: block;
-    max-width: 100%;
+    /*display: block;
+    max-width: 100%;*/
 }
 
 :root {
@@ -63,6 +63,11 @@ body {
 
 /*<editor-fold desc="Typography">*/
 /*Typography*/
+::selection {
+    background: var(--primaryColor);
+    color: white;
+}
+
 h1, h2, h3 {
     color: var(--headerTextColor);
     line-height: 1.1;
@@ -79,6 +84,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 500;
 }
 
 @media screen and (min-width: 1024px){
@@ -217,7 +223,7 @@ h3 {
 }
 
 .icon--primary {
-    fill: var(--primaryColor);
+    fill: var(--primaryColor); !important;
 }
 
 .icon--white {
@@ -487,6 +493,7 @@ h3 {
 
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
@@ -727,17 +734,19 @@ h3 {
     color: #7b858b;
 }
 
-.block--dark .block__heading{
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
     color: var(--whiteText);
 }
 
 .block--skewed-right {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
     padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .block--skewed-left {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
     padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -815,9 +824,6 @@ nav.collapsible--expanded .nav__toggler {
 
 /*<editor-fold desc="Hero">*/
 /* Hero */
-.hero {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 
 .hero__tagline {
     color: #b9c3cf;
@@ -935,6 +941,27 @@ nav.collapsible--expanded .nav__toggler {
 
 /*</editor-fold>*/
 
+/*<editor-fold desc="Show case block">*/
+/* Showcase block */
+.block-showcase__image >img{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+
+    .block-showcase__image {
+        justify-self: end;
+    }
+
+    .block-showcase__image > img {
+        max-width: 700px;
+        width: 100%;
+    }
+}
+/*</editor-fold>*/
 
 
 
