@@ -179,7 +179,6 @@ h3 {
 /*<editor-fold desc="Lists">*/
 /* Lists */
 .list {
-    color: var(--headerTextColor);
     padding-left: 0;
 }
 
@@ -223,7 +222,7 @@ h3 {
 }
 
 .icon--primary {
-    fill: var(--primaryColor); !important;
+    fill: var(--primaryColor);
 }
 
 .icon--white {
@@ -263,7 +262,7 @@ h3 {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -323,6 +322,7 @@ h3 {
 @media screen and (min-width: 1024px){
     .button {
         font-size: 1.5rem;
+        padding: 2rem 3rem;
     }
 }
 
@@ -881,10 +881,17 @@ nav.collapsible--expanded .nav__toggler {
     justify-items: center;
     max-width: 700px;
     margin: 0 auto;
+    color: var(--headerTextColor);
 }
 
 .blockDomain__prices .badge {
     padding: 0.5rem 1.5rem;
+}
+
+@media screen and (max-width: 367px) {
+    .blockDomain__prices {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 768px) {

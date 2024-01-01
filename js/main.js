@@ -4,3 +4,7 @@ collapsibles.forEach((item) =>
         this.classList.toggle("collapsible--expanded");
     })
 );
+
+src="https://unpkg.com/aos@next/dist/aos.js">
+
+    AOS.init();

@@ -5,7 +5,16 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
+
+    <!--Search engine optimization-->
+    <meta name="description" content="Deploy your websites in less than 60 seconds.">
+    <meta property="og:title" content="Moshify...">
+    <meta property="og:description" content="Moshify...">
+    <meta property="og:type" content="website">
+    <!--<meta property="og:image" content="htpp://">
+    <meta property="og:url" content="htpp:// some urls">-->
+
+    <title>Moshify - GO Online for just $9</title>
     <!--Fonts we want the user to download for all pages -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -14,6 +23,9 @@
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <!--<link rel="stylesheet" href="css/normalize.css" type="text/css">-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <script type="module" src="js/main.js"></script>
 </head>
 <body>
 
@@ -41,13 +53,13 @@
 
     <div class="container grid grid--1x2">
 
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-right">
             <h1 class="block__heading">Cloud Hosting for Pros</h1>
             <p class="hero__tagline">Deploy your websites in less than 60 seconds</p>
             <a href="" class="button button--orange hero__button">Get started</a>
         </header>
 
-        <Picture>
+        <Picture data-aos="fade-up">
             <source type="image/webp" srcset="images/resized/banner@1x.webp 1x, images/resized/banner@2x.webp 2x">
             <source type="image/png" srcset="images/resized/banner@1x.png 1x, images/resized/banner@2x.png 2x">
 
@@ -61,6 +73,7 @@
 
 <!--Domain Block-->
 <section class="block container block-domain">
+
     <header class="block__header">
         <h2 class="block__heading">Starting at $9 per month</h2>
         <p>
@@ -181,7 +194,9 @@
     </header>
 
     <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+
+        <!--First Column-->
+        <div class="feature__content" data-aos="fade-right">
             <span class="icon-Container">
                 <svg class="icon icon--primary">
                     <use xlink:href="images/icons/sprite.svg#easy"></use>
@@ -195,7 +210,8 @@
             <a href="#" class="linkArrow">Learn More</a>
         </div>
 
-        <picture>
+        <!--Second Column-->
+        <picture data-aos="zoom-in-left">
 
             <source
                     type="image/webp"
@@ -448,12 +464,12 @@
     <div class="container grid footer__sections">
 
         <section class="collapsible collapsible--expanded footer__section">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
                 <h2 class="collapsible__heading footer__heading">Products</h2>
                 <svg class="icon icon--white collapsible__chevron">
                     <use xlink:href="images/icons/sprite.svg#chevron"></use>
                 </svg>
-            </header>
+            </div>
 
             <div class="collapsible__content">
                 <ul class="list">
@@ -467,12 +483,12 @@
         </section>
 
         <section class="collapsible collapsible--expanded footer__section">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
                 <h2 class="collapsible__heading footer__heading">Company</h2>
                 <svg class="icon icon--white collapsible__chevron">
                     <use xlink:href="images/icons/sprite.svg#chevron"></use>
                 </svg>
-            </header>
+            </div>
 
             <div class="collapsible__content">
                 <ul class="list">
@@ -489,12 +505,12 @@
         </section>
 
         <section class="collapsible collapsible--expanded footer__section">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
                 <h2 class="collapsible__heading footer__heading">Support</h2>
                 <svg class="icon icon--white collapsible__chevron">
                     <use xlink:href="images/icons/sprite.svg#chevron"></use>
                 </svg>
-            </header>
+            </div>
 
             <div class="collapsible__content">
                 <ul class="list">
@@ -510,12 +526,12 @@
         </section>
 
         <section class="collapsible collapsible--expanded footer__section">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
                 <h2 class="collapsible__heading footer__heading">Domain</h2>
                 <svg class="icon icon--white collapsible__chevron">
                     <use xlink:href="images/icons/sprite.svg#chevron"></use>
                 </svg>
-            </header>
+            </div>
 
             <div class="collapsible__content">
                 <ul class="list">
@@ -528,16 +544,21 @@
 
         </section>
 
-        <section class="footer__brand">
+        <div class="footer__brand">
             <img src="images/logo.svg" alt="">
             <p class="footer__copyright">Copyright © 2020 Adam Potter</p>
-        </section>
+        </div>
 
     </div>
 
 </footer>
 
 <script src="js/main.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
